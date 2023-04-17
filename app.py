@@ -10,7 +10,7 @@ df = df.sort_values(by='date')
 fig = px.line(df, x='date', y="sales",  title="Pink Morsel Sales")
 
 app.layout = html.Div(children=[
-    html.H1(children='data visiualization for Sales vs. Date'),
+    html.H1(children='data visiualization for Sales vs. Date', id='header'),
 
     dcc.RadioItems(
                 ['north', 'east', 'south', 'west', 'all'],
